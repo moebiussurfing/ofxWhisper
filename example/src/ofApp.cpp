@@ -19,24 +19,37 @@ void ofApp::setup(){
     // whisperSettings.no_context    = true; //"keep context between audio chunks\n",
     // whisperSettings.no_timestamps = false; 
     // whisperSettings.language  = "en"; //"spoken language\n",
+     
+    //whisperSettings.step_ms    = 500;     //step_ms "audio step size in milliseconds\n",             ;
+    //whisperSettings.length_ms  = 5000;     //length_ms "audio length in milliseconds\n",                ;
+
+    //whisperSettings.no_timestamps = true; 
+
+     //whisperSettings.language  = "spa"; //"spoken language\n",
+    // whisperSettings.translate     = false; //"translate from source language to english\n",
+
     // whisperSettings.model     = "models/ggml-base.en.bin"; //"model path\n",
         
-    
     whisper.setup(whisperSettings);
+    
     ofSoundStreamSettings settings;
     soundStream.printDeviceList();
 
 #ifdef TARGET_WIN32
     // set your device to the correct api. otherwise it might not work.
     //windows is a bit quirky about this.
-     auto devices = soundStream.getDeviceList(ofSoundDevice::Api::MS_WASAPI);
+     auto devices = soundStream.getDeviceList(ofSoundDevice::Api::MS_DS);
+     //auto devices = soundStream.getDeviceList(ofSoundDevice::Api::MS_WASAPI);
      
      for (size_t i = 0; i < devices.size(); i++) {
          cout << i << "  : " << devices[i].name << endl;
      }
      // remember to choose the correct input device.
-     settings.setInDevice(devices[1]);
-     settings.setApi(ofSoundDevice::Api::MS_WASAPI);
+     //settings.setInDevice(devices[1]);
+     //settings.setInDevice(devices[7]);
+     settings.setInDevice(devices[9]);
+     settings.setApi(ofSoundDevice::Api::MS_DS);
+     //settings.setApi(ofSoundDevice::Api::MS_WASAPI);
 
 #else
     auto devices = soundStream.getMatchingDevices("default");

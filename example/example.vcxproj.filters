@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSampleRate\src\ofxSamplerate.cpp">
+			<Filter>addons\ofxSampleRate\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxWhisper\src\ofxWhisper.cpp">
+			<Filter>addons\ofxWhisper\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxWhisper\src\ofxWhisperBufferedSoundInput.cpp">
+			<Filter>addons\ofxWhisper\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxWhisper\libs\whisper_cpp\src\common.cpp">
+			<Filter>addons\ofxWhisper\libs\whisper_cpp\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSampleRate">
+			<UniqueIdentifier>{8FF52D66-6CFA-FBB7-7F28-DAEB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSampleRate\src">
+			<UniqueIdentifier>{93E80C15-A3B2-D32A-C066-5AB2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSampleRate\libs">
+			<UniqueIdentifier>{D62B45C3-6F21-5DD8-FB56-B56E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSampleRate\libs\libsamplerate">
+			<UniqueIdentifier>{0294690F-A1B6-88B2-D58C-6FB3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSampleRate\libs\libsamplerate\include">
+			<UniqueIdentifier>{481E792F-83BF-1A7B-CA11-48FA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxWhisper">
+			<UniqueIdentifier>{25AD8301-4EFB-3F12-5B67-9C77}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxWhisper\src">
+			<UniqueIdentifier>{5004A6F2-2A8A-07F4-EF02-EFFF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxWhisper\libs">
+			<UniqueIdentifier>{32F5280F-F36A-CCB7-4997-4075}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxWhisper\libs\whisper_cpp">
+			<UniqueIdentifier>{6D7BCC0B-19A3-6D71-0046-45DC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxWhisper\libs\whisper_cpp\include">
+			<UniqueIdentifier>{74422AE8-1BDE-6CD1-5A7F-690B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxWhisper\libs\whisper_cpp\src">
+			<UniqueIdentifier>{8DFAD5EB-A549-D139-E6F4-44F8}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSampleRate\src\ofxSamplerate.h">
+			<Filter>addons\ofxSampleRate\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSampleRate\libs\libsamplerate\include\samplerate.h">
+			<Filter>addons\ofxSampleRate\libs\libsamplerate\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxWhisper\src\ofxWhisper.h">
+			<Filter>addons\ofxWhisper\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxWhisper\src\ofxWhisperBufferedSoundInput.h">
+			<Filter>addons\ofxWhisper\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxWhisper\libs\whisper_cpp\include\common.h">
+			<Filter>addons\ofxWhisper\libs\whisper_cpp\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxWhisper\libs\whisper_cpp\include\ggml.h">
+			<Filter>addons\ofxWhisper\libs\whisper_cpp\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxWhisper\libs\whisper_cpp\include\whisper.h">
+			<Filter>addons\ofxWhisper\libs\whisper_cpp\include</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>

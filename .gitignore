@@ -110,3 +110,8 @@ Desktop.ini
 
 libs/whisper_cpp/models/
 libs/whisper_cpp/models/*
+example/addons/ofxSampleRate/src/ofxSamplerate.obj
+example/addons/ofxWhisper/libs/whisper_cpp/src/common.obj
+example/addons/ofxWhisper/src/ofxWhisper.obj
+example/addons/ofxWhisper/src/ofxWhisperBufferedSoundInput.obj
+example/bin/data/models/ggml-base.en.bin

@@ -45,9 +45,12 @@ if [[ "$OSTYPE" =~ ^msys ]]; then
         exit 1
     fi
 
-	cmake -S . -B ./build -A x64 -DCMAKE_BUILD_TYPE=Release -DWHISPER_SUPPORT_SDL2=OFF -DBUILD_SHARED_LIBS=OFF -DWHISPER_BUILD_EXAMPLES=OFF -DWHISPER_BUILD_TESTS=OFF -DWHISPER_ALL_WARNINGS=OFF
+	#cmake -S . -B ./build -A x64 -DCMAKE_BUILD_TYPE=Release -DWHISPER_SUPPORT_SDL2=OFF -DBUILD_SHARED_LIBS=OFF -DWHISPER_BUILD_EXAMPLES=OFF -DWHISPER_BUILD_TESTS=OFF -DWHISPER_ALL_WARNINGS=OFF
+  	cmake -S . -B ./build -A x64 -DCMAKE_BUILD_TYPE=Debug -DWHISPER_SUPPORT_SDL2=OFF -DBUILD_SHARED_LIBS=OFF -DWHISPER_BUILD_EXAMPLES=OFF -DWHISPER_BUILD_TESTS=OFF -DWHISPER_ALL_WARNINGS=OFF
+
   	cd ./build 
-  	/c/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe ALL_BUILD.vcxproj -t:build -p:configuration=Release -p:platform=x64
+  	#/c/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe ALL_BUILD.vcxproj -t:build -p:configuration=Release -p:platform=x64
+  	/c/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe ALL_BUILD.vcxproj -t:build -p:configuration=Debug -p:platform=x64
   	cd ..
 else
 make libwhisper.a	
@@ -75,7 +78,8 @@ if [[ "$OSTYPE" =~ ^linux ]]; then
 fi
 
 if [[ "$OSTYPE" =~ ^msys ]]; then
-	cp build/Release/whisper.lib ../libs/whisper_cpp/lib/vs/
+	#cp build/Release/whisper.lib ../libs/whisper_cpp/lib/vs/
+	cp build/Debug/whisper.lib ../libs/whisper_cpp/lib/vs/
 fi	
 
 cp whisper.h ../libs/whisper_cpp/include/
