@@ -109,7 +109,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisper.lib</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisperRELEASE.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSampleRate\libs\libsamplerate\lib\vs;..\..\..\addons\ofxWhisper\libs\whisper_cpp\lib\vs</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />
@@ -131,7 +131,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisper.lib</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisperDEBUG.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSampleRate\libs\libsamplerate\lib\vs;..\..\..\addons\ofxWhisper\libs\whisper_cpp\lib\vs</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />
@@ -155,7 +155,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisper.lib</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisperRELEASE.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSampleRate\libs\libsamplerate\lib\vs;..\..\..\addons\ofxWhisper\libs\whisper_cpp\lib\vs</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />
@@ -178,7 +178,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisper.lib</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);samplerate.lib;whisperRELEASE.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSampleRate\libs\libsamplerate\lib\vs;..\..\..\addons\ofxWhisper\libs\whisper_cpp\lib\vs</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />
