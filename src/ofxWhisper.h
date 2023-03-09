@@ -80,5 +80,5 @@ public:
     
     void update();
     
-    
+    ofParameter<bool> bTimeStamps{ "TimeStamps", true};
 };

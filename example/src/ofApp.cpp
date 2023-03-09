@@ -25,8 +25,8 @@ void ofApp::setup(){
 
     //whisperSettings.no_timestamps = true; 
 
-     //whisperSettings.language  = "spa"; //"spoken language\n",
-    // whisperSettings.translate     = false; //"translate from source language to english\n",
+     //whisperSettings.language  = "es"; //"spoken language\n",
+     //whisperSettings.translate     = false; //"translate from source language to english\n",
 
     // whisperSettings.model     = "models/ggml-base.en.bin"; //"model path\n",
         
