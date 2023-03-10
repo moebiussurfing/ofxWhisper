@@ -79,6 +79,10 @@ public:
     virtual void threadedFunction() override;
     
     void update();
+
+
+    //--
     
+
     ofParameter<bool> bTimeStamps{ "TimeStamps", true};
 };
